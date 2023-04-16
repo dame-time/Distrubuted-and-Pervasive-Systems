@@ -12,7 +12,6 @@ public class Client {
 		{
 			BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
 			DataOutputStream outToServer = new DataOutputStream(s.getOutputStream());
-			BufferedReader inFromServer = new BufferedReader(new InputStreamReader(s.getInputStream()));
 			
 			outToServer.writeBytes(inFromUser.readLine() + "\n");
 		}
